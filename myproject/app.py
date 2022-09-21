@@ -28,11 +28,11 @@ def signup():
     if request.method == 'POST':
         return 'register user'
     else:
-        return 'show sign up box'
+        return render_template('login.html')
 
 @app.route("/todo/<int:id>", methods=['GET'])
 def show_todo(id):
-    return f'todo {id}'
+    return render_template('login.html')
 
 
 
