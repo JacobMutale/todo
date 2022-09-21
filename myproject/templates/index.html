@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<body>
+    <main>
+        <h1>Hi welcome to my todo app</h1>
+        {% if user %}
+        <h1>welcome {{user.name}}</h1>
+        <!-- add for loop for todos -->
+        {% else %}
+        <button>Sign up</button>
+        <button>Sign in</button>
+        {% endif %}
+    </main>
+</body>
